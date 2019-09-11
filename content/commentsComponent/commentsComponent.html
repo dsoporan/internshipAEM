@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<!--class="list-group-item"-->
+<!--class="list-group"-->
+
+<p style="font-size:40px;">Component for Comments</p>
+
+<div data-sly-use.comment="com.aem.community.core.models.CommentsModel">
+    <ul data-sly-list="${comment.commentsList}">
+        <br><br>
+        <li>ID: ${item.id}</li>
+        <li>Name: ${item.name}</li>
+        <li>Email: ${item.email}</li>
+        <li>Body: ${item.body}</li>
+    </ul>
+</div>
+
+<!--<div data-sly-use.userM="com.aem.community.core.models.UserModel">-->
+<!--    <ul>-->
+<!--        <br><br>-->
+<!--        User:-->
+<!--        <li>ID: ${userM.user.id}</li>-->
+<!--        <li>Name: ${userM.user.nume}</li>-->
+<!--        <li>Email: ${userM.user.mail}</li>-->
+<!--        <li>Street: ${userM.user.address.street}</li>-->
+<!--        <li>Suite: ${userM.user.address.suite}</li>-->
+<!--        <li>City: ${userM.user.address.city}</li>-->
+<!--        <li>Latitude: ${userM.user.address.lat}</li>-->
+<!--        <li>Longitude: ${userM.user.address.lng}</li>-->
+<!--        <li>Phone: ${userM.user.phone}</li>-->
+<!--        <li>Website: ${userM.user.website}</li>-->
+<!--        <li>Company Name: ${userM.user.companyName}</li>-->
+<!--        <li>Company CatchPhrase: ${userM.user.companyCatchPhrase}</li>-->
+<!--    </ul>-->
+<!--</div>-->
+
+<!--<div data-sly-resource="${@path='parsysForm',resourceType='foundation/components/parsys'}"></div>-->

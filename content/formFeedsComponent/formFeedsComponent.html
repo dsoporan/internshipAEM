@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<!--class="list-group-item"-->
+<!--class="list-group"-->
+
+<p style="font-size:40px;">Component for feeds</p>
+
+<div data-sly-use.feedComponentModel="com.aem.community.core.models.FeedComponentModel">
+    <ul data-sly-list="${feedComponentModel.entriesList}">
+        <br><br>
+        Entry:
+        <li>ID: <a href=${item.id}>${item.id}</a></li>
+        <li>Title: ${item.title}</li>
+        <li>Author Name: <a href=${item.authorUri}>${item.name}</a></li>
+        <li>Published: ${item.published}</li>
+        <li>Updated: ${item.updated}</li>
+    </ul>
+</div>
+
+<!--<div>-->
+<!--    <p>Component Form:</p>-->
+
+<!--    <form name="contactForm" method="POST" action="${currentNode.path}">-->
+<!--        First Name: <input type="text" name="firstname"/> <br/>-->
+<!--        Last Name: <input type="text" name="lastname"/> <br/>-->
+<!--        Message / Question: <input type="text" name="message"/> <br/>-->
+<!--        E-mail: <input type="text" name="email"/>-->
+<!--        <p data-sly-test="${properties.myCheckbox}"> Phone: <input type="text" name="phone"/> </p> <br/>-->
+
+<!--        <input type="submit" value="Submit" />-->
+<!--    </form>-->
+<!--</div>-->
+
+<!--<div data-sly-resource="${@path='parsysForm',resourceType='foundation/components/parsys'}"></div>-->

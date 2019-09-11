@@ -1,0 +1,5 @@
+<sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"></sly>
+<sly data-sly-call="${clientLib.css @ categories='AEM62CSS.user'}"></sly>
+<body>
+<div data-sly-resource="${@path='parsysUser',resourceType='foundation/components/parsys'}"></div>
+</body>
